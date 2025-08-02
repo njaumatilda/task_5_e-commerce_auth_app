@@ -72,11 +72,11 @@ npm start
 
 ## API Documentation
 Here is the reference on the usage of the API: 
-<!-- [API Documentation]() -->
+[API Documentation](https://documenter.getpostman.com/view/38132076/2sB3BAMYQx)
 
 ## Deployment
 The API has been deployed to a publicly accessible endpoint on Render:
-<!-- [Live URL]() -->
+[Live URL](https://task-5-e-commerce-auth-app.onrender.com)
 
 ## Author
 [Matilda Njau](https://github.com/njaumatilda) 
