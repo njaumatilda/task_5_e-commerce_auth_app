@@ -1,8 +1,23 @@
 # KODECAMP 5.0 NODE.JS BEGINNER TRACK
-This is a REST API project for an e-commerce app that:
-+ Provides two POST endpoints; for registering and logging in users. 
-+ Provides a single GET enpoint that is not protected so anyone logged in or not can access it, and it returns all the products in the app
-+ Provides two POST endpoints that are protected and only admins are authorized to make requests.
+
+---
+
+This is a a continuation of my REST API project for an e-commerce app from my previous TASK 4 version that:
++ Provided two POST endpoints; for registering and logging in users. 
++ Provided a single GET enpoint that is not protected so anyone logged in or not can access it, and it returns all the products in the app
++ Provided two POST endpoints that are protected and only admins are authorized to make requests.
+
+In addition to the already existing endpoints above, it:
++ Provides a single GET endpoint that returns a list of products by a specific brand
++ Provides a GET, POST, PUT and DELETE endpoints for:
+  + Returning the list of all the brands
+  + Adding brands
+  + Updating brands
+  + Deleting brands
+
+| **Only admins are allowed to access the POST, PUT and DELETE brand endpoints** |
+
+---
 
 ## Tech Stack
 + Node.js
@@ -13,13 +28,13 @@ This is a REST API project for an e-commerce app that:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/njaumatilda/task_4_e-commerce_auth_app.git
+git clone https://github.com/njaumatilda/task_5_e-commerce_auth_app.git
 ```
 
 2. Navigate to the project directory
 
 ```bash
-cd task_4_e-commerce_auth_app
+cd task_5_e-commerce_auth_app
 ```
 
 3. Install dependencies
@@ -39,7 +54,15 @@ SALT = your-salt
 JWT_KEY = your-secret-key
 ```
 
-> Replace `your-db-url` with your specified db url, `your-port` with your specified port, `your-salt` with your specified salt and `your-secret-key` with your specified secret key
+> Replace:
+>
+> `your-db-url` with your specified db url, 
+>
+> `your-port` with your specified port, 
+>
+>`your-salt` with your specified salt and 
+>
+>`your-secret-key` with your specified secret key
 
 6. Start the server
 
@@ -49,11 +72,11 @@ npm start
 
 ## API Documentation
 Here is the reference on the usage of the API: 
-[API Documentation](https://documenter.getpostman.com/view/38132076/2sB34kEJfY)
+<!-- [API Documentation]() -->
 
 ## Deployment
 The API has been deployed to a publicly accessible endpoint on Render:
-[Live URL](https://task-4-e-commerce-auth-app.onrender.com/)
+<!-- [Live URL]() -->
 
 ## Author
 [Matilda Njau](https://github.com/njaumatilda) 

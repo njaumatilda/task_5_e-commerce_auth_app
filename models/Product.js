@@ -1,4 +1,5 @@
 import mongoose from "mongoose"
+import mongoosePaginate from "mongoose-paginate-v2"
 
 const productSchema = new mongoose.Schema(
   {
@@ -7,9 +8,20 @@ const productSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    brand: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "brand",
+      required: true,
+      trim: true,
+    },
     ownerId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "user",
+      required: true,
+      trim: true,
+    },
+    category : {
+      type: String,
       required: true,
       trim: true,
     },
@@ -36,5 +48,7 @@ const productSchema = new mongoose.Schema(
   },
   { timestamps: true, strict: true }
 )
+
+productSchema.plugin(mongoosePaginate)
 
 export default mongoose.model("product", productSchema)

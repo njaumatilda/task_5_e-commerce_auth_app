@@ -57,7 +57,7 @@ const login = async (req, res) => {
     const token = jwt.sign(
       { userId: findUser.id, email: findUser.email, role: findUser.role },
       JWT_KEY,
-      { expiresIn: 1000 * 60 * 60 * 60 }
+      { expiresIn: "3d" }
     )
 
     res.status(200).json({

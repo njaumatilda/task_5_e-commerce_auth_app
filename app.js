@@ -4,6 +4,7 @@ import express from "express"
 import { dbConnect } from "./db.js"
 import usersRoutes from "./routes/users-auth.js"
 import productsRoutes from "./routes/products.js"
+import brandsRoutes from "./routes/brands.js"
 
 const app = express()
 const PORT = process.env.PORT
@@ -12,6 +13,7 @@ app.use(express.json())
 
 app.use("/auth", usersRoutes)
 app.use("/products", productsRoutes)
+app.use("/brands", brandsRoutes)
 
 app.get("/", (req, res) => {
   res.json({message: "Deployment successful"})
@@ -21,3 +23,14 @@ app.listen(PORT, () => {
   console.log(`[server]: App listening on port: ${PORT}`)
   dbConnect()
 })
+
+
+
+/*
+TODO: For the next tasks:
++ use real email addresses for users to verify
++ add input validations for the req bodies
++ use role-based authorization as a middleware to prevent repetition
++ see if i can add images and store externally eg. for brand logos
++ how do i add type of currency to cost when it accepts numbers only
+*/
