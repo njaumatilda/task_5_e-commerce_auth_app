@@ -33,4 +33,6 @@ TODO: For the next tasks:
 + use role-based authorization as a middleware to prevent repetition
 + see if i can add images and store externally eg. for brand logos
 + how do i add type of currency to cost when it accepts numbers only
++ when you try to delete a brand, check if it has products first, and if yes don't delete the brand
++ change the logic for creating a brand when creating products in the product route
 */
